@@ -1,0 +1,28 @@
+{
+  "name": "monfent.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mayfantasy/monfent.com.git",
+  "author": "hansknowyou <yuelun123321@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
+    "antd": "^4.0.3",
+    "axios": "^0.19.0",
+    "next": "^9.1.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "sass": "^1.26.3"
+  },
+  "devDependencies": {
+    "@types/next": "^8.0.6",
+    "@types/node": "^12.11.7",
+    "@types/react": "^16.9.11",
+    "typescript": "^3.6.4"
+  }
+}

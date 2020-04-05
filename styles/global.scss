@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// ||==============
+// || Reset
+a {
+  text-decoration: none;
+}
+
+// ||==============
+// || Layout
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 100;
+}
+.layout {
+  display: flex;
+}
+.horizontal {
+  flex-direction: row;
+}
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.flex-1 {
+  flex-grow: 1;
+}
+.block {
+  display: block;
+}
+// ||==============
+// || Utility
+.pointer {
+  cursor: pointer;
+}
+
+// ||==============
+// || Size
+.w-100vw {
+  width: 100vw;
+}
+.h-100vh {
+  height: 100vh;
+}
+.w-100p {
+  width: 100%;
+}
+.h-100p {
+  height: 100%;
+}
+.w-50p {
+  width: 50%;
+}
+.w-300 {
+  width: 300px;
+}
+.h-70 {
+  height: 70px;
+}
+
+// ||==============
+// || Color
+$c-primary: rgb(250, 173, 20);
+$c-primary-07: rgba(250, 173, 20, 0.7);
+$c-dark-1: rgb(5, 6, 7);
+$c-dark-1-07: rgba(5, 6, 7, 0.7);
+$c-grey-5: #f1f2f3;
+$c-black: black;
+$c-white: white;
+
+// ******* Primary
+.cf-primary {
+  color: $c-primary;
+}
+.cb-primary {
+  background-color: $c-primary;
+}
+.hover-cb-primary-07 {
+  &:hover {
+    background-color: $c-primary-07;
+  }
+}
+// ******* Dark
+.cf-dark-1 {
+  color: $c-dark-1;
+}
+.cb-dark-1 {
+  background-color: $c-dark-1;
+}
+.hover-cb-dark-1-07 {
+  &:hover {
+    background-color: $c-dark-1-07;
+  }
+}
+
+// ******* Grey
+.cf-grey-5 {
+  color: $c-grey-5;
+}
+.cb-grey-5 {
+  background-color: $c-grey-5;
+}
+
+// ******* Black
+.cf-black {
+  color: $c-black;
+}
+.cb-black {
+  background-color: $c-black;
+}
+
+// ******* White
+.cf-white {
+  color: $c-white;
+}
+.cb-white {
+  background-color: $c-white;
+}
