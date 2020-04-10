@@ -6,6 +6,17 @@ const Home = () => {
   return (
     <div className="layout vertical page-home h-100vh">
       <div className=" cb-grey-5 flex-1 relative">
+        <div className="absolute w-100p top-0 left-0  h-70 z-3">
+          <nav className="w-100p h-100p ph-20 layout horizontal justify-end align-center">
+            <Link href={pageRoutes.signup.url}>
+              <a className="btn-primary">Pricing</a>
+            </Link>
+            &nbsp;
+            <Link href={pageRoutes.signup.url}>
+              <a className="btn-secondary">Sign Up Now</a>
+            </Link>
+          </nav>
+        </div>
         <div className="absolute w-100p h-100p top-0 left-0">
           <ParticlesBg />
         </div>
@@ -23,9 +34,9 @@ const Home = () => {
             Documentation
           </a>
         </Link>
-        <Link href={pageRoutes.signup.url}>
+        <Link href={pageRoutes.features.url}>
           <a className="layout w-50p cf-black cb-primary justify-center align-center hover-cb-primary-07">
-            Sign Up
+            Features
           </a>
         </Link>
       </div>

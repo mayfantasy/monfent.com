@@ -7,5 +7,11 @@ export const pageRoutes = {
   },
   signup: {
     url: 'https://cms.monfent.com/register'
+  },
+  features: {
+    url: '/features'
+  },
+  pricing: {
+    url: '/pricing'
   }
 }
