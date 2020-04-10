@@ -18,6 +18,10 @@ const Header = (props: IProps) => {
           )}
         </div>
         <div>
+          <Link href={pageRoutes.about.url}>
+            <a className="btn-link">About</a>
+          </Link>
+          &nbsp;
           <Link href={pageRoutes.features.url}>
             <a className="btn-link">Features</a>
           </Link>
@@ -26,10 +30,10 @@ const Header = (props: IProps) => {
             <a className="btn-link">Documentation</a>
           </Link>
           &nbsp;&nbsp;
-          <Link href={pageRoutes.pricing.url}>
+          {/* <Link href={pageRoutes.pricing.url}>
             <a className="btn-primary">Pricing</a>
-          </Link>
-          &nbsp;
+          </Link> */}
+          {/* &nbsp; */}
           <Link href={pageRoutes.signup.url}>
             <a className="btn-secondary">Sign Up Now</a>
           </Link>

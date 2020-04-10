@@ -3,7 +3,15 @@ import Link from 'next/link'
 
 interface IProps extends IPricingConfig {}
 const PricingCard = (props: IProps) => {
-  const { name, price, tagline, features, priceSuffix, subscribeUrl } = props
+  const {
+    name,
+    price,
+    tagline,
+    features,
+    priceSuffix,
+    subscribeUrl,
+    button
+  } = props
   return (
     <>
       <style jsx>{`
@@ -47,11 +55,13 @@ const PricingCard = (props: IProps) => {
         </ul>
         <br />
         <div className="subscribe">
-          <Link href={subscribeUrl}>
-            <a>
-              <button className="btn-primary pointer">Subscribe</button>
-            </a>
-          </Link>
+          {button || (
+            <Link href={subscribeUrl}>
+              <a>
+                <button className="btn-primary pointer">Subscribe</button>
+              </a>
+            </Link>
+          )}
         </div>
       </div>
     </>

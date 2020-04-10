@@ -6,4 +6,5 @@ export interface IPricingConfig {
   tagline: string
   features: string[]
   subscribeUrl: string
+  button?: React.ReactNode
 }

@@ -2,6 +2,9 @@ export const pageRoutes = {
   home: {
     url: '/'
   },
+  about: {
+    url: '/about'
+  },
   documentation: {
     url: '/documentation'
   },
