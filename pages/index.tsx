@@ -1,46 +1,16 @@
-import Link from 'next/link'
-import { pageRoutes } from '../helpers/page.helper'
-import ParticlesBg from '../components/ParticlesBg'
+import LayoutMain from '../components/LayoutMain'
 
-const Home = () => {
+const HomePage = () => {
   return (
-    <div className="layout vertical page-home h-100vh">
-      <div className=" cb-grey-5 flex-1 relative">
-        <div className="absolute w-100p top-0 left-0  h-70 z-3">
-          <nav className="w-100p h-100p ph-20 layout horizontal justify-end align-center">
-            <Link href={pageRoutes.signup.url}>
-              <a className="btn-primary">Pricing</a>
-            </Link>
-            &nbsp;
-            <Link href={pageRoutes.signup.url}>
-              <a className="btn-secondary">Sign Up Now</a>
-            </Link>
-          </nav>
-        </div>
-        <div className="absolute w-100p h-100p top-0 left-0">
-          <ParticlesBg />
-        </div>
-        <div className="absolute top-0 left-0 w-100p h-100p layout justify-center align-center">
-          <div className="w-300">
-            <div>
-              <img className="w-100p" src="/logo-monfent.png" />
-            </div>
+    <LayoutMain>
+      <div className="w-100p h-100p layout justify-center align-center">
+        <div className="w-300">
+          <div>
+            <img className="w-100p" src="/logo-monfent.png" />
           </div>
         </div>
       </div>
-      <div className="layout horizontal h-70">
-        <Link href={pageRoutes.documentation.url}>
-          <a className="layout w-50p cf-white cb-dark-1 justify-center align-center hover-cb-dark-1-07">
-            Documentation
-          </a>
-        </Link>
-        <Link href={pageRoutes.features.url}>
-          <a className="layout w-50p cf-black cb-primary justify-center align-center hover-cb-primary-07">
-            Features
-          </a>
-        </Link>
-      </div>
-    </div>
+    </LayoutMain>
   )
 }
-export default Home
+export default HomePage
