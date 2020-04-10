@@ -17,6 +17,7 @@
     "next": "^9.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-particles-js": "^3.0.3",
     "sass": "^1.26.3"
   },
   "devDependencies": {
