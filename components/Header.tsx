@@ -11,9 +11,21 @@ const Header = (props: IProps) => {
     <div className="absolute w-100p top-0 left-0  h-70 z-3">
       <nav className="w-100p h-100p ph-20 layout horizontal space-between align-center">
         <div>
-          {showLogo && <img className="w-200" src="/logo-monfent.png" />}
+          {showLogo && (
+            <Link href={pageRoutes.home.url}>
+              <img className="w-200 pointer" src="/logo-monfent.png" />
+            </Link>
+          )}
         </div>
         <div>
+          <Link href={pageRoutes.features.url}>
+            <a className="btn-link">Features</a>
+          </Link>
+          &nbsp;
+          <Link href={pageRoutes.documentation.url}>
+            <a className="btn-link">Documentation</a>
+          </Link>
+          &nbsp;&nbsp;
           <Link href={pageRoutes.pricing.url}>
             <a className="btn-primary">Pricing</a>
           </Link>
