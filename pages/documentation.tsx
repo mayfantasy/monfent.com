@@ -1,4 +1,4 @@
-import LayoutMain from '../components/LayoutMain'
+import LayoutMain from '../components/HomeLayoutMain'
 
 const documentationPage = () => {
   return (

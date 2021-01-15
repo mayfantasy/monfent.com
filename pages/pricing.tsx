@@ -1,5 +1,4 @@
-import LayoutMain from '../components/LayoutMain'
-import { IPricingConfig } from '../types/pricing.types'
+import LayoutMain from '../components/HomeLayoutMain'
 import PricingCard from '../components/PricingCard'
 import { pageRoutes } from '../helpers/page.helper'
 import Link from 'next/link'
@@ -33,7 +32,7 @@ import Link from 'next/link'
 //   }
 // ]
 
-const pricings: IPricingConfig[] = [
+const pricings = [
   {
     name: 'Free',
     key: 'free',
